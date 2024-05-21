@@ -4,6 +4,10 @@ const secondValue = document.getElementById('second');
 const submitForm = document.getElementById('form');
 const output = document.getElementById('output');
 
+document.getElementById("sub").addEventListener("click",sub);
+
+
+
 // 결과값 출력 핸들러
 const formSubmitHandler = (event) => {
   event.preventDefault();
@@ -19,3 +23,9 @@ submitForm.addEventListener('submit', formSubmitHandler);
 
 // 덧셈 함수
 const add = (a, b) => a + b;
+
+// 뺄셈 함수
+function sub() {
+  const result = (Number(firstValue.value))-(Number(secondValue.value));
+  output.textContent = result;
+}
