@@ -36,3 +36,19 @@ const mult = function(a,b){
   multi_result.textContent = `${Number(firstValue.value)} x ${Number(secondValue.value)} = ${result}`;
 }
 document.getElementById("multi").onclick = mult;
+
+//나눗셈 함수 
+const div = () => {
+  const num1 = Number(firstValue.value);
+  const num2 = Number(secondValue.value);
+
+  if (num2 === 0) {
+    divide_result.textContent = "0으로 나눌 수 없습니다.";
+  } else {
+    const result = num1 / num2;
+    divide_result.textContent = `${num1} ÷ ${num2} = ${result}`;
+  }
+};
+document.getElementById("divide").onclick = div;
+//나눗셈 결과
+const divide_result = document.getElementById('divide_result');
