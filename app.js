@@ -3,16 +3,12 @@ const secondValue = document.getElementById('second');
 
 const submitForm = document.getElementById('form');
 const output = document.getElementById('output');
-<<<<<<< HEAD
 
 document.getElementById("sub").addEventListener("click",sub);
 
 
-
-=======
 //곱셈 결과
 const multi_result = document.getElementById('multi_result');
->>>>>>> 95f72eb79757eb84867bd82bb3a9cb4bc2b6f535
 // 결과값 출력 핸들러
 const formSubmitHandler = (event) => {
   event.preventDefault();
@@ -29,17 +25,14 @@ submitForm.addEventListener('submit', formSubmitHandler);
 // 덧셈 함수
 const add = (a, b) => a + b;
 
-<<<<<<< HEAD
 // 뺄셈 함수
 function sub() {
   const result = (Number(firstValue.value))-(Number(secondValue.value));
   output.textContent = result;
 }
-=======
 //곱셈 함수
 const mult = function(a,b){
   const result = Number(firstValue.value) * Number(secondValue.value);
   multi_result.textContent = `${Number(firstValue.value)} x ${Number(secondValue.value)} = ${result}`;
 }
 document.getElementById("multi").onclick = mult;
->>>>>>> 95f72eb79757eb84867bd82bb3a9cb4bc2b6f535
