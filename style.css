@@ -156,3 +156,20 @@ display: none;
 font-size: 2rem;
 color: #00ff00;
 }
+
+#multi{
+    font-weight: 300;
+    margin-top: 10px;
+    color: #8F8F8F;
+    font-size: 22px;
+    border: none;
+    z-index: -1;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+
+}
+
+#multi_result{
+    font-size: 2rem;
+    color: #00ff00;
+}
