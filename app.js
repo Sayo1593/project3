@@ -7,6 +7,7 @@ const output = document.getElementById('output');
 document.getElementById("sub").addEventListener("click",sub);
 
 
+
 //곱셈 결과
 const multi_result = document.getElementById('multi_result');
 // 결과값 출력 핸들러
